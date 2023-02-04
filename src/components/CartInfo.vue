@@ -129,7 +129,7 @@ export default {
     },
     methods: {
         orderToTG() {
-            let productItem = ''
+            if(this.goods.length){let productItem = ''
 
             this.goods.forEach((item) => {
                 productItem +=
@@ -154,7 +154,7 @@ export default {
                     // this.$router.push('/success')
                     // location.reload()
                     // реализуется как вариант
-                })
+                })}
         }
     },
     created() {
